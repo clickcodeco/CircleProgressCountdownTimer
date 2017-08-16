@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/circle"
+        android:indeterminate="false"
+        android:max="60"
+        android:progress="60"
+        />
+
+    <EditText
+        android:id="@+id/editTextCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewCount"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Enter Seconds"
+        android:inputType="number"
+        android:maxLength="4"
+        />
+
+    <TextView
+        android:id="@+id/textViewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="100dp"
+        android:text="00"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewReset"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_reset"
+        android:layout_below="@+id/textViewCount"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewSwitch"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_start"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
